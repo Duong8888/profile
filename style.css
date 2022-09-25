@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: linear-gradient(45deg, #00853e, #50c878);
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#khung{
+    text-align: center;
+    width: 1000px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 300px;
+    height: 400px;
+    background-color: #242628;
+    border-radius: 15px;
+    margin: 100px 30px;
+    overflow: hidden;
+}
+
+.Image{
+    width: 120px;
+    height: 120px;
+    transform: translateY(20px);
+    margin: auto;
+    border-radius:50%;
+    border: 4px solid #f2726a;
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+}
+.Image>video{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+
+
+.Image img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    
+}
+
+.Image:hover {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    transform: unset;
+    transition: 0.5s;
+}
+
+.name{
+    color: #fff;
+    margin-top: 50px;
+}
+
+.name p{
+    color: #f2726a;
+    margin-top: 10px;
+}
+
+.icon {
+    margin: 25px 0px;
+    height: 50px;
+    width: 75%;
+    display: flex;
+    margin:20px auto;
+}
+
+.fb,.yt,.tk,.gh{
+    margin: auto;
+}
+
+.icon a{
+    color: #fff;
+    font-size: 20px;
+}
+
+.icon a:hover{
+    color: #f2726a;
+}
+
+button{
+    padding: 10px 15px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #f2726a;
+    border-radius: 4px;
+    background-color: #242628;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #f2726a;
+}
